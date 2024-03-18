@@ -1,0 +1,14 @@
+<h1>App Cadastro de Filmes</h1>
+<form class="Formulario" (ngSubmit)="cadastrarFilme()">
+  <label>Nome do filme</label>
+  <input type="text" [(ngModel)]="filme.titulo" name="titulo" required>
+
+  <label>Gênero</label>
+  <input type="text" [(ngModel)]="filme.genero" name="genero" required>
+
+  <label>Duração</label>
+  <input type="number" [(ngModel)]="filme.duracao" name="duracao" required>
+
+  <button type="submit">Cadastrar</button>
+</form>
+<app-lista-filmes></app-lista-filmes>

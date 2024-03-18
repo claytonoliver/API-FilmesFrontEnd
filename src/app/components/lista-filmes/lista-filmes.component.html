@@ -1,0 +1,19 @@
+<h2>Lista de Filmes</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Título</th>
+      <th>Gênero</th>
+      <th>Duração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let filme of filmes">
+      <td>{{filme.id}}</td>
+      <td>{{ filme.titulo }}</td>
+      <td>{{ filme.genero }}</td>
+      <td>{{ filme.duracao }}</td>
+    </tr>
+  </tbody>
+</table>
